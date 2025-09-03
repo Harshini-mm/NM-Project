@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Digital Portfolio</title>
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #222;
+      line-height: 1.6;
+      padding: 0 20px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: #4169E1;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav button {
+      padding: 5px 12px;
+      background: white;
+      color: #4169E1;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+
+    section {
+      margin: 50px 0;
+    }
+
+    section h2 {
+      margin-bottom: 15px;
+      color: #4169E1;
+    }
+
+    ul {
+      list-style: square inside;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      border-top: 1px solid #ccc;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #4169E1;
+      text-decoration: none;
+    }
+
+    /* Skills */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #4169E1;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-size: 0.9em;
+    }
+
+    /* Responsive layout */
+    @media (max-width: 600px) {
+      nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      nav a, nav button {
+        margin: 5px 0;
+      }
+    }
+
+    /* Dark Mode */
+    body.dark {
+      background: #0e1a2b;
+      color: #f1f1f1;
+    }
+
+    body.dark header {
+      background: #1a2b4c;
+    }
+
+    body.dark nav a {
+      color: #87CEFA;
+    }
+
+    body.dark nav button {
+      background: #333;
+      color: #87CEFA;
+    }
+
+    body.dark section h2 {
+      color: #87CEFA;
+    }
+
+    body.dark .skill {
+      background: #87CEFA;
+      color: #0e1a2b;
+    }
+
+    body.dark a {
+      color: #87CEFA;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Harshini M</h1>
+    <p>Web Developer | Tech Enthusiast</p>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <button onclick="toggleDarkMode()">🌙 Mode</button>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <section id="home">
+    <h2>Welcome</h2>
+    <p>Welcome to my portfolio! I'm Harshini M, a web developer who enjoys building clean and responsive websites. Feel free to explore my work and learn more about me.</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I’m Harshini M, a passionate web developer with a focus on front-end development. I enjoy turning ideas into real, user-friendly websites using HTML, CSS, JavaScript, and React. I love learning new technologies and constantly improving my skills to create better digital experiences..</p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Responsive Design</div>
+     
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Portfolio Website</strong> – A responsive personal website </li>
+      
+    </ul>
+  </section>
+
+ 
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">mharshini909@gmail.com</a></p>
+   
+    <p>GitHub: <a href="https://github.com/Harshini-mm" target="_blank">https://github.com/Harshini-mm</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+
+</body>
+</html>
